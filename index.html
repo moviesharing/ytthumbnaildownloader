@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YouTube Thumbnail Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="main-menu">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>YouTube Thumbnail Downloader</h1>
+    
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" id="youtube-url" placeholder="Enter YouTube URL">
+        <button type="submit">Get Thumbnail</button>
+    </form>
+    
+    <div id="thumbnail-info">
+        <img id="thumbnail-image" src="" alt="Video Thumbnail">
+        <a id="download-button" href="" download>Download Thumbnail</a>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> YouTube Thumbnail Downloader. All rights reserved. | <a class="disclaimer-link" href="disclaimer.html">Disclaimer</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

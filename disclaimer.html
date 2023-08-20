@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Disclaimer - YouTube Thumbnail Downloader</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            color: #FF9900;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .disclaimer-link {
+            color: #FF9900;
+            text-decoration: none;
+        }
+
+        .disclaimer-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        /* For mobile phones */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        /* For tablets and larger devices */
+        @media only screen and (min-width: 600px) {
+            .col-1 { width: 8.33%; }
+            .col-2 { width: 16.66%; }
+            .col-3 { width: 25%; }
+            .col-4 { width: 33.33%; }
+            .col-5 { width: 41.66%; }
+            .col-6 { width: 50%; }
+            .col-7 { width: 58.33%; }
+            .col-8 { width: 66.66%; }
+            .col-9 { width: 75%; }
+            .col-10 { width: 83.33%; }
+            .col-11 { width: 91.66%; }
+            .col-12 { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+	
+	    <header>
+        <nav class="main-menu">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <h1>Disclaimer</h1>
+    <p>This website is a YouTube thumbnail downloader tool designed to allow users to retrieve and download thumbnails from YouTube videos.</p>
+    <p>Please note that this website is not affiliated with or endorsed by YouTube.</p>
+    <p>The thumbnails displayed and downloaded using this tool are sourced from YouTube's publicly available images.</p>
+    <p>We do not claim any ownership or rights over the thumbnails.</p>
+    <p>All intellectual property rights belong to their respective owners.</p>
+    <p>By using this website, you acknowledge that you are responsible for complying with YouTube's terms of service and any applicable copyright laws.</p>
+    <p>We recommend using the downloaded thumbnails responsibly and respecting the rights of content creators.</p>
+    <p>Use of this website is solely at your own risk.</p>
+
+    <footer>
+        <p>&copy; <span id="year"></span> YouTube Thumbnail Downloader. All rights reserved. | <a class="disclaimer-link" href="index.html">Go Back</a></p>
+    </footer>
+
+    <script>
+        // Function to get current year for the footer
+        function getCurrentYear() {
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById('year').textContent = year;
+        }
+
+        // Call getCurrentYear function on page load
+        getCurrentYear();
+    </script>
+</body>
+</html>
